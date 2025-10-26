@@ -1,0 +1,5 @@
+title: Ordinaryn Scrapbook Journal
+description: My personal aesthetic journal powered by Jekyll.
+baseurl: "/Ordinaryn-Blog-theme" # 🚨 GANTI NAMA REPO ANDA DI SINI
+markdown: kramdown
+theme: minima
