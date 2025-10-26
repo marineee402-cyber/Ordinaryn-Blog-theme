@@ -6,7 +6,7 @@
 body {
   margin: 0;
   margin: 0;
-  background: url("./images/background.jpg") center/cover no-repeat fixed; /* Tambahkan 'fixed' lagi agar tidak ikut scroll */
+  background: url("./images/background.jpg") center/cover no-repeat fixed; 
   font-family: 'Dudu_Calligraphy', cursive;
   display: flex;
   flex-direction: column;
@@ -222,5 +222,6 @@ body {
     transform: rotate(0deg);
   }
 }
+
 
 
