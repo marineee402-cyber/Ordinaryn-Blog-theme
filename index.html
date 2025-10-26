@@ -1,51 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scrapbook Journal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrapbook Journal</title>
+  
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css" /> 
 </head>
 
 <body>
-  <div class="journal-container">
-    <!-- Background Paper -->
-    <div class="paper-overlay"></div>
+  <div class="journal-container">
+        <div class="paper-overlay"></div>
 
-    <!-- SCRAPS -->
-    <img src="images/2.png" class="scrap aesthetic" alt="Aesthetic Scrap">
-    <img src="images/10.png" class="scrap food" alt="Food Scrap">
-    <img src="images/cloud.png" class="scrap cloud" alt="Cloud Scrap">
-    <img src="images/camera.png" class="scrap camera" alt="Camera Scrap">
-    <img src="images/8.png" class="scrap sticky" alt="Sticky Note">
+        <img src="{{ site.baseurl }}/images/2.png" class="scrap aesthetic" alt="Aesthetic Scrap">
+    <img src="{{ site.baseurl }}/images/10.png" class="scrap food" alt="Food Scrap">
+    <img src="{{ site.baseurl }}/images/cloud.png" class="scrap cloud" alt="Cloud Scrap">
+    <img src="{{ site.baseurl }}/images/camera.png" class="scrap camera" alt="Camera Scrap">
+    <img src="{{ site.baseurl }}/images/8.png" class="scrap sticky" alt="Sticky Note">
 
-    <div class="ocean-photo">
-      <img src="images/ocean.png" alt="Ocean Photo">
-    </div>
+    <div class="ocean-photo">
+      <img src="{{ site.baseurl }}/images/ocean.png" alt="Ocean Photo">
+    </div>
 
-    <!-- JOURNAL TEXT -->
-    <div class="journal-text">
-      <h1 class="blog-title">My Journal ✿</h1>
-      <p>
-        Today feels like a quiet rewind. The sunlight slipped softly through the curtains,
-        painting warm shades across my messy desk. I opened an old notebook and saw pressed
-        flowers, faded ink, and small scribbles that still made me smile.
-      </p>
-      <p>
-        Outside, clouds drifted lazily over the hills, and the air smelled like rain. Maybe life
-        isn't about chasing storms anymore — maybe it's about learning to stand still and feel the
-        wind again.
-      </p>
-    </div>
-  </div>
+        <div class="journal-text">
+      <h1 class="blog-title">{{ page.title }} ✿</h1> 
+      {{ content }} 
+    </div>
+  </div>
 
-  <!-- Navigation -->
-  <footer class="navigation">
-    <button id="prevBtn">Previous</button>
-    <button id="nextBtn">Next</button>
-  </footer>
+    <footer class="navigation">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </footer>
 
-  <script src="script.js"></script>
+    <script src="{{ site.baseurl }}/script.js"></script>
 </body>
 </html>
