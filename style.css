@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  color: #000000;
+  font-color: #000000;
   overflow-x: hidden;
   font-weight: 600;
 }
@@ -38,6 +38,7 @@ body {
         rgba(60, 47, 35, 0.02) 23px, 
         rgba(136, 77, 0, 0.1) 24px 
     );
+    colour: #f4f0e7
 }
 
 /* --- Text --- */
@@ -223,6 +224,7 @@ body {
     transform: rotate(0deg);
   }
 }
+
 
 
 
