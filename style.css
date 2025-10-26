@@ -1,12 +1,14 @@
 /* --- Base Page --- */
+/* GANTI TAUTAN RAW KE RELATIF */
 @font-face {
-  font-family: 'Dudu_Calligraphy';
-  src: url('font/Dudu_Calligraphy.ttf') format('truetype');
+  font-family: 'Dudu_Calligraphy';
+  src: url('./font/Dudu_Calligraphy.ttf') format('truetype'); 
 }
 body {
-  margin: 0;
-  background: url("images/background.jpg") center/cover no-repeat;
-  font-family: 'Dudu_Calligraphy', cursive;
+  margin: 0;
+  margin: 0;
+  background: url("./images/background.jpg") center/cover no-repeat fixed; /* Tambahkan 'fixed' lagi agar tidak ikut scroll */
+  font-family: 'Dudu_Calligraphy', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,3 +223,4 @@ body {
     transform: rotate(0deg);
   }
 }
+
