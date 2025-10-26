@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  background: url("images/background.jpg") center/cover no-repeat;
+  background: url("images/background.png") center/cover no-repeat;
   font-family: 'Dudu_Calligraphy', cursive;
   display: flex;
   flex-direction: column;
@@ -221,3 +221,4 @@ body {
     transform: rotate(0deg);
   }
 }
+
