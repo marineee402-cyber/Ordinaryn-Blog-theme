@@ -1,5 +1,4 @@
 /* --- Base Page --- */
-/* GANTI TAUTAN RAW KE RELATIF */
 @font-face {
   font-family: 'Dudu_Calligraphy';
   src: url('./font/Dudu_Calligraphy.ttf') format('truetype'); 
@@ -223,4 +222,5 @@ body {
     transform: rotate(0deg);
   }
 }
+
 
