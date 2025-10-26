@@ -1,53 +1,58 @@
 /* --- Base Page --- */
 @font-face {
-  font-family: 'Dudu_Calligraphy';
-  src: url('font/Dudu_Calligraphy.ttf') format('truetype');
+  font-family: 'Dudu_Calligraphy';
+  src: url('/Ordinaryn-Blog-theme/font/Dudu_Calligraphy.ttf') format('truetype');
 }
 body {
-  margin: 0;
-  background: url("images/background.png") center/cover no-repeat;
-  font-family: 'Dudu_Calligraphy', cursive;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  color: #000000;
-  overflow-x: hidden;
-  font-weight: 600;
+  margin: 0;
+  background: url("/Ordinaryn-Blog-theme/images/background.png") center/cover no-repeat;
+  background-color: #f4f0e7; 
+  font-family: 'Dudu_Calligraphy', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #000000;
+  overflow-x: hidden;
+  font-weight: 600;
 }
 
 /* --- Journal --- */
 .journal-container {
-  position: relative;
-  width: 90%;
-  max-width: 700px;
-  min-height: 90vh;
-  margin: 40px auto;
-  background: rgba(239, 229, 213, 0.88);
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-  padding: 5vw;
-  box-sizing: border-box;
-  overflow: hidden;
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  min-height: 90vh;
+  margin: 40px auto;
+  background: rgba(239, 229, 213, 0.88);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  padding: 5vw;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .paper-overlay {
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient( to bottom, rgba(60, 47, 35, 0.18) 0px, rgba(60, 47, 35, 0.07) 23px, rgb(136, 77, 0) 24px );
-  z-index: 0;
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient( 
+    to bottom, 
+    rgba(60, 47, 35, 0.05) 0px, 
+    rgba(60, 47, 35, 0.02) 23px, 
+    rgba(136, 77, 0, 0.1) 24px 
+);
+  z-index: 0;
 }
 
 /* --- Text --- */
 .journal-text {
-  position: relative;
-  z-index: 5;
-  font-size: clamp(14px, 2vw, 18px);
-  line-height: 1.6;
-  margin-top: 22vh; /* less vertical gap so it starts below sticky */
-  padding: 0 2rem 10rem 1rem; /* more padding bottom so scraps fit */
-  max-width: 80%;
-}
+  position: relative;
+  z-index: 5;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.6;
+  margin-top: 22vh; 
+  padding: 0 2rem 10rem 1rem;
+  max-width: 80%;
 
 /* --- Scrap Common --- */
 .scrap {
@@ -221,4 +226,5 @@ body {
     transform: rotate(0deg);
   }
 }
+
 
