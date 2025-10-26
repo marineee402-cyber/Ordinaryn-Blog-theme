@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  color: #000000;
+  font-color: #000000;
   overflow-x: hidden;
   font-weight: 600;
 }
@@ -221,3 +221,4 @@ body {
     transform: rotate(0deg);
   }
 }
+
